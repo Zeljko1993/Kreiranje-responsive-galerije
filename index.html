@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - Kreiranje responsive galerije</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        #container h2 {
+            padding: 8px;
+        }
+
+        .container ::after {
+            content: '';
+            display: block;
+            clear: left;
+        }
+
+        .responsive {
+            float: left;
+            width: 17.666%;
+            height: 127px;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            border-radius: 17px;
+        }
+
+        .gallery img {
+            width: 120px;
+            height: 70px;
+            background-color:#8686ff;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            flex-basis: 0%;
+            flex-grow: 5;
+        }
+
+        .title {
+            padding: 10px;
+            text-align: center;
+        }
+
+        #main>p {
+            text-align: left;
+            display: inline-flex;
+            padding: 8px;
+        }
+
+        @media screen and (max-width:1024px) {
+            .responsive {
+                grid-auto-columns: 4;
+                grid-auto-rows: 2;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .responsive {
+                grid-auto-columns: 3;
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width:414px) {
+            .responsive {
+                grid-auto-columns: 1;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h2> Gallary Heading </h2>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <img src="placeholder-image.png" width="300" height="200"></a>
+                <div class="title">Image Title</div>
+            </div>
+        </div>
+
+        <footer id="main">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis enim orci, sed fermentum tellus
+                dapibus
+                vitae. Aliquam finibus ultricies magna, sed ultrices erat pellentesque sit amet. Vivamus efficitur
+                maximus
+                metus
+                vel suscipit. Fusce mollis rutrum tortor. Aliquam nisi quam, aliquet at pellentesque ac, placerat a
+                neque.
+                Nam
+                elementum dolor non mi eleifend, id pulvinar felis dictum. Etiam posuere imperdiet dictum. Phasellus a
+                libero
+                sem. Etiam eleifend interdum mattis. Aenean pharetra mauris quam, non tempus elit ullamcorper vel. Nunc
+                ex
+                mi,
+                tincidunt eu bibendum nec, dignissim eget turpis. Sed ultricies id sem suscipit ullamcorper. Vestibulum
+                eu
+                sapien lacinia, ultrices mauris et, aliquam ipsum. Sed vulputate semper erat, sit amet lobortis mi.
+                Vestibulum
+                in nisi nunc. Phasellus sollicitudin tincidunt arcu.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
